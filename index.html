@@ -92,6 +92,95 @@
   </div>
 </section>
 <!--Service-->
+<!-- Portfolio -->
+<section id="Portfolio" class="content" style="display: flex; flex-direction: column; align-items: center; padding: 20px; background-color: #f4f4f4;"> 
+  
+  <!-- Container -->
+  <div class="container portfolio_title" style="text-align: center; margin-bottom: 20px;"> 
+    <!-- Title -->
+    <div class="section-title">
+      <h2 style="font-size: 2rem; font-weight: bold; margin: 0;">Portfolio</h2>
+    </div>
+    <!--/Title --> 
+  </div>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+    
+  <!-- Portfolio Wrapper -->
+  <div id="portfolio_wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; width: 100%; max-width: 1200px;"> 
+      
+    <!-- Portfolio Item -->
+    <div class="portfolio-item" style="position: relative; width: calc(33.33% - 20px); max-width: 300px; overflow: hidden; flex: 1;">
+      <div style="position: relative; width: 100%;">
+        <div class="portfolio_img" style="position: relative; width: 100%; overflow: hidden; cursor: pointer;">
+          <img src="img/roof_image1.jpg" alt="Portfolio 1" style="width: 100%; display: block;" onclick="openLightbox('img/roof_image1_large.jpg')">
+        </div>
+        <div class="item_overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center;">
+          <div class="item_info" style="color: #fff; text-align: center;">
+            <h4 class="project_name" style="font-size: 1rem; font-weight: bold;">Projekts Juglā</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Portfolio Item -->
+
+    <!-- Portfolio Item -->
+    <div class="portfolio-item" style="position: relative; width: calc(33.33% - 20px); max-width: 300px; overflow: hidden; flex: 1;">
+      <div style="position: relative; width: 100%;">
+        <div class="portfolio_img" style="position: relative; width: 100%; overflow: hidden; cursor: pointer;">
+          <img src="img/roof_image2.jpg" alt="Portfolio 2" style="width: 100%; display: block;" onclick="openLightbox('img/roof_image2_large.jpg')">
+        </div>
+        <div class="item_overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center;">
+          <div class="item_info" style="color: #fff; text-align: center;">
+            <h4 class="project_name" style="font-size: 1rem; font-weight: bold;">Projekts Ādažos</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Portfolio Item -->
+
+    <!-- Portfolio Item -->
+    <div class="portfolio-item" style="position: relative; width: calc(33.33% - 20px); max-width: 300px; overflow: hidden; flex: 1;">
+      <div style="position: relative; width: 100%;">
+        <div class="portfolio_img" style="position: relative; width: 100%; overflow: hidden; cursor: pointer;">
+          <img src="img/sertifikats.png" alt="Portfolio 3" style="width: 100%; display: block;" onclick="openLightbox('img/sertifikats_large.png')">
+        </div>
+        <div class="item_overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center;">
+          <div class="item_info" style="color: #fff; text-align: center;">
+            <h4 class="project_name" style="font-size: 1rem; font-weight: bold;">Sertifikāts</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Portfolio Item -->
+
+  </div>
+</section>
+<!--/Portfolio -->
+
+<!-- Lightbox Modal -->
+<div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; z-index: 1000;">
+  <span style="position: absolute; top: 20px; right: 20px; font-size: 2rem; color: white; cursor: pointer;" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="" style="max-width: 90%; max-height: 90%; display: block;">
+</div>
+
+<script>
+  // Function to open the lightbox
+  function openLightbox(imageSrc) {
+    document.getElementById('lightbox').style.display = 'flex';
+    document.getElementById('lightbox-img').src = imageSrc;
+  }
+
+  // Function to close the lightbox
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.getElementById('lightbox-img').src = '';
+  }
+</script>
+
+
+
 
 <!--Footer-->
 <footer class="footer_wrapper" id="contact">
