@@ -220,8 +220,6 @@ a.read_more2:hover {
     padding: 40px 0 40px;
 }
 
-.service_section {}
-
 .service_block {
     text-align: center;
     padding-left: 15px;
@@ -309,7 +307,6 @@ a.read_more2:hover {
 }
 
 .service-list-col1 i {
-    display: ;
     color: #888;
     font-size: 19px;
     font-style: normal;
@@ -942,7 +939,6 @@ a.contact_btn:hover {
     .page_section.team {
         padding: 40px 0;
     }
-    ,
     #clients {
         padding: 40px 0;
     }
