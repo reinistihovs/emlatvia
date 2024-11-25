@@ -1,4 +1,4 @@
-Simple HTML landing page for kokakopnes.lv
+Simple HTML landing page for kokakopnes
 
 Credits :
 -------
